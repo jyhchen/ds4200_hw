@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<!-- Metadata -->
+
+<head>
+    <meta charset='utf-8'>
+
+    <!-- Title -->
+    <title>Assignment: D3 Brushing</title>
+
+    <!-- CSS Styling -->
+    <link rel='stylesheet' href='style.css'>
+
+    <!-- Favicons -->
+    <link rel='apple-touch-icon' sizes='180x180' href='favicons/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='favicons/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='favicons/favicon-16x16.png'>
+    <link rel='manifest' href='favicons/site.webmanifest'>
+    <link rel='shortcut icon' href='favicons/favicon.ico'>
+    <meta name='msapplication-TileColor' content='#da532c'>
+    <meta name='msapplication-config' content='favicons/browserconfig.xml'>
+    <meta name='theme-color' content='#ffffff'>
+</head>
+
+<!-- Main page content -->
+
+<body>
+
+    <!-- Update this with your GitHub repo URL -->
+    <span id='forkongithub'><a href='https://github.com/NEU-DS-4200-S22/A7--D3_Brushing'>Fork me on GitHub</a></span>
+
+    <!-- Writeup -->
+    <div class='content-column'>
+        <h1>Assignment: D3 brushing</h1>
+
+        <h2>Murder, Poverty, and Unemployment in Texas</h2>
+
+        This line chart and scatter plot show the relationships between murder rate, poverty rate, unemployement rate, and time.
+
+    </div>
+
+    <!-- Visualization goes here -->
+    <div class='vis-holder'>
+        <div class='linechart-holder' id='linechart'></div>
+        <div class='scatterplot-holder' id='scatterplot'></div>
+    </div>
+    <div class='table-holder' id='table'></div>
+
+    <!-- Further writeup -->
+    <div class='content-column'>
+        <h2>Acknowledgments</h2>
+
+        <p>
+            <em>List here where any code, packages/libraries, text, images, designs, etc. that you leverage come from.</em>
+        </p>
+
+        <ul>
+            <li><a href='https://d3js.org/'>
+        D3: Data-Driven Documents</a> by Mike Bostock is used for manipulating the DOM to create visualizations. In particular:
+                <ul>
+                    <li><a href='https://github.com/d3/d3-brush'>d3-brush</a>, which let you select a one- or two-dimensional region using the mouse or touch. We use it for brushing.</li>
+                    <li><a href='https://github.com/d3/d3-dispatch'>d3-dispatch</a>, which lets you register named callbacks and call them with arguments. We use it for linking.</li>
+                </ul>
+            </li>
+            <li><a href='https://codepo8.github.io/css-fork-on-github-ribbon/#'>
+        Pure CSS responsive 'Fork me on GitHub' ribbon</a> by Chris Heilmann is used to create the banner that links back to the source code repository.
+            </li>
+            <li>Data from Truth in Accounting's <a href='https://www.statedatalab.org/state_data_and_comparisons/'>State Data Lab</a>.</li>
+            <li><a href='https://stackoverflow.com/questions/44224227/attr-vs-classed-in-d3-js'>
+        Using classed in D3
+      </a> Stack overflow documentation of changing svg properties. Lines 92, 107 in scatterplot.js and linechart.js
+            </li>
+        </ul>
+    </div>
+
+    <!-- Scripts at the end avoid need for dealing with async, defer, or onload event handlers -->
+    <script src='lib/d3.v7.3.0/d3.js'></script>
+    <script src='js/scatterplot.js'></script>
+    <script src='js/linechart.js'></script>
+    <script src='js/visualization.js'></script>
+</body>
+
+</html>
